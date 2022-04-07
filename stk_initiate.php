@@ -38,7 +38,8 @@ if(isset($_POST['submit'])){
   $headers = ['Content-Type:application/json; charset=utf8'];
 
     # M-PESA endpoint urls
-  $access_token_url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
+  //$access_token_url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
+  $access_token_url = 'svSCbOtLYGUYBAtGlHIQUgSvo2MB';
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
@@ -65,15 +66,15 @@ if(isset($_POST['submit'])){
 
   $curl_post_data = array(
     //Fill in the request parameters with valid values
-    'BusinessShortCode' => $BusinessShortCode,
-    'Password' => $Password,
+    'BusinessShortCode' => $174379,
+    'Password' => $Safaricom991!,
     'Timestamp' => $Timestamp,
     'TransactionType' => 'CustomerPayBillOnline',
-    'Amount' => $Amount,
-    'PartyA' => $PartyA,
+    'Amount' => $1,
+    'PartyA' => $254791234650,
     'PartyB' => $BusinessShortCode,
-    'PhoneNumber' => $PartyA,
-    'CallBackURL' => $CallBackURL,
+    'PhoneNumber' => $254791234650,
+    'CallBackURL' => $"https://intense-plateau-77059.herokuapp.com/callback_url.php",
     'AccountReference' => $AccountReference,
     'TransactionDesc' => $TransactionDesc
   );
